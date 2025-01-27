@@ -1,0 +1,49 @@
+body {
+    padding-top: 60px; /* Espacio para el header fijo en pagina */
+    font-family: 'Lora', serif;
+    background-color: #dbc6a9;
+}
+
+/* Estilos para el navbar */
+#navbar {
+    background-color: #fcf5c7; /* Color cuarzo por defecto */
+    position: fixed; /* Fijo en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%; /* El navbar ocupa todo el ancho */
+    height: 70px; /* Altura del navbar */
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos entre los bordes */
+    align-items: center; /* Alineación vertical de los elementos */
+    padding: 0 20px; /* Espaciado horizontal de 20px a ambos lados */
+    z-index: 1000; /* Asegura que el navbar esté por encima de otros elementos */
+}
+
+/* Estilos para los enlaces del navbar */
+#menu {
+    display: flex; /* Hace que los elementos de la lista se alineen horizontalmente */
+    justify-content: center; /* Centra los elementos en el contenedor */
+    width: 100%; /* Asegura que ocupe todo el ancho */
+}
+
+/* Estilos para cada elemento de la lista */
+#menu li {
+    list-style: none; /* Elimina los puntos de lista */
+    text-decoration: none;
+    margin: 10px; /* Espaciado entre los enlaces */
+    margin-bottom: 0px;
+}
+
+/* Estilos para los enlaces dentro del menú */
+#menu a {
+    color: black; /* Color por defecto del texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves para color y tamaño */
+}
+
+/* Cambio de color y animación al pasar el ratón sobre los enlaces */
+#menu a:hover {
+    color: #f1c100; /* Cambia el color del enlace al pasar el ratón */
+    text-decoration: none; /* No subraya el enlace */
+}

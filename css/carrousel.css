@@ -1,0 +1,95 @@
+/* El contenedor del carrusel Infinito*/
+.carrusel-cafes {
+    width: 100%; /*Ancho*/
+    height: 20px; /*Altura*/
+    background: url('../imagenes/carrusel-cafe.jpg') repeat-x; /* Repetir solo horizontalmente */
+    background-size: auto 20px; /* Ajusta la altura a 20px y mantiene proporciones horizontales */
+    animation: scroll 5s linear infinite; /* Animación de desplazamiento infinito */
+    margin-bottom: 10px;
+}@keyframes scroll {0% {background-position: 0 0;}100% {background-position: -200px 0px;}}/* Animación para el desplazamiento del carrousel*/
+
+.glide {
+    max-width: 700px; /* Maxima anchura permitida*/
+    max-height: 530px; /* Maxima altura permitida(No tocar, se desborda)*/
+    border: 2px solid #ccc; /*color de borde*/
+    border-radius: 12px; /*radio del borde*/
+    overflow: hidden;
+}
+
+.glide__slide img {
+    width: 700px; /*Ancho*/
+    height: 530px; /*Altura*/
+    object-fit: cover; /*Asegura que la imagen cubra el contenedor sin deformarse*/
+}
+
+.contenedor-1 {
+    padding: 10px; /*Espacio dentro del contenedor*/
+    display: flex; /*Usamos flexbox para colocar los elementos en una fila*/
+    /*border: 1px solid black;*/
+}
+
+.mini-contenedor{
+    padding: 10px; /*Espacio dentro del contenedor*/
+    flex: 1;
+}
+
+.contenedor-2 {
+    padding: 20px;
+    height: 100%;
+    margin: 0 auto; /* Centra el contenedor */
+    overflow: hidden; /* Esconde contenido fuera del área visible */
+    background: #fae0bd;
+    border: 1px solid #ddd;
+}
+
+.splide__list {
+    display: flex; /* Coloca los elementos en fila */
+    gap: 20px; /* Espacio entre las tarjetas */
+    padding: 10px 0; /* Espaciado dentro del carrusel */
+    margin: 0; /* Elimina márgenes predeterminados */
+    list-style: none; /* Elimina los estilos de lista */
+}
+
+.splide__slide {
+    height: 335px; /* Altura de cada tarjeta */
+    background: #fff; /* Fondo blanco */
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    background: #f8f4ee;
+}
+
+/* Contenedor principal en columna y centrado */
+.mini-contenedor-2 {
+    padding: 10px;
+    display: flex; /* Usamos flexbox */
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilo para la imagen */
+.splide__slide img {
+    height: 200px;
+    border-radius: 15px;
+}
+
+/* Estilo para el texto */
+.splide__slide p {
+    font-size: 20px;
+}
+
+/* Estilo para el botón */
+.splide__slide button {
+    background-color: #f4ac3f; /* bg-rose-400 */
+    border-radius: 5px; /* rounded-md */
+    color: #fff; /* text-white */
+    font-size: 20px;
+}
+
+
+
+
+
+
