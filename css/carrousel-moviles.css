@@ -1,0 +1,60 @@
+@media (max-width: 768px) {
+    /* Ajustar las imágenes de los carruseles */
+    .glide__slide img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Mantén las proporciones */
+        border-radius: 8px; /* Bordes redondeados */
+    }
+
+    .splide__slide img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Mantén las proporciones */
+        border-radius: 8px; /* Bordes redondeados */
+    }
+
+    /* Ajustar las tarjetas y botones */
+    .splide__slide {
+        width: auto;
+        height: auto;
+        padding: 10px; /* Espacio interno */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    /* Ajustar el contenedor principal */
+    .contenedor-1 {
+        flex-direction: column; /* Cambiar a disposición vertical */
+        gap: 10px; /* Separación entre elementos */
+    }
+
+    .contenedor-2 {
+        padding: 10px; /* Reducir el padding */
+        gap: 5px; /* Separar tarjetas */
+        min-height: 300px; /* Garantiza que el contenedor tenga un tamaño mínimo */
+    }
+
+    .mini-contenedor-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%; /* Esto asegura que el contenedor ocupe todo el alto disponible */
+    }
+    
+    .mini-contenedor-2 img {
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho */
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .mini-contenedor-2 p {
+        font-size: 15px;
+        text-align: center;
+        margin: 15px 0; /* Espacio alrededor del texto */
+        flex-grow: 1; /* Permite que el párrafo ocupe el espacio restante y se centre */
+    }
+    
+    .mini-contenedor-2 button {
+        font-size: 12px;
+        border-radius: 5px;
+        margin-top: 10px; /* Espacio entre el texto y el botón */
+    }
+}

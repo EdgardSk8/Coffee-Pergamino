@@ -88,8 +88,7 @@
     font-size: 20px;
 }
 
-
-
-
-
-
+.splide__slide button:hover {
+    background-color: #23e023;
+    transition: background-color 0.2s ease;
+}
