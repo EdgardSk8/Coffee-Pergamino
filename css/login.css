@@ -1,0 +1,102 @@
+/* Animación de apertura */
+@keyframes Abrirventana {
+  0% {
+    transform: scaleY(0.1); /* Comenzamos con el alto comprimido */
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(1.2); /* Se expande un poco más del tamaño real */
+    opacity: 1;
+  }
+  100% {
+    transform: scaleY(1); /* Regresa a su tamaño normal */
+    opacity: 1;
+  }
+
+}
+
+/* Aplicar la animación al cargar la página */
+.login {
+  width: 340px;
+  background: rgba(82, 47, 16, 0.747); /* Fondo semi-transparente */
+  padding: 40px;
+  color: #fff;
+  border-radius: 17px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+
+  /* Centrando elementos internos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Aplicar la animación */
+  animation: Abrirventana 0.6s ease-out;
+}
+
+/* Fondo de pantalla */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../imagenes/fondo-login.png') no-repeat center center/cover; /* Imagen de fondo */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* Estilos para el título */
+.h1 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+.login input[type="text"],
+.login input[type="password"] {
+  width: 100%;
+  max-width: 280px; /* Ajuste para evitar que se desborden */
+  padding: 13px 18px;
+  margin: 10px 0;
+  font-size: 1em;
+  border-radius: 50px;
+  border: none;
+  background: rgba(54, 31, 11, 0.836);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+  text-align: center; /* Centrar texto dentro de los inputs */
+}
+
+.login input:focus {
+  transform: scale(1.05);
+}
+
+/* Botón de login */
+.login input[type="submit"] {
+  width: 100%;
+  max-width: 280px;
+  padding: 14px;
+  margin-top: 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(144deg, #8b3ef0, #f3ac42 50%, #eb3700);
+  color: #fff;
+  transition: background-position 4.9s ease-in-out;}
+
+.login input[type="submit"]:hover {
+  background: linear-gradient(144deg, #6f00ff, #ff9900 50%, #ff3c00);
+}
+
+/* Diseño responsive */
+@media only screen and (max-width: 600px) {
+  .login {
+    width: 70%;
+    padding: 10%;
+  }
+}
