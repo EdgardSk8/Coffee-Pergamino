@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "nombre": "Espresso",
+        "descripcion": "Un café fuerte y concentrado, perfecto para los amantes del sabor intenso.",
+        "precio": 2.50,
+        "imagen": "../imagenes/menu/cafes/cafe-intenso.jpg"
+    },
+    {
+        "id": 2,
+        "nombre": "Latte Vainilla",
+        "descripcion": "Una combinación suave de espresso, leche vaporizada y un toque de vainilla.",
+        "precio": 3.50,
+        "imagen": "../imagenes/menu/cafes/latte-suave.jpg"
+    },
+    {
+        "id": 3,
+        "nombre": "Cappuccino",
+        "descripcion": "Espresso con leche vaporizada y una capa espumosa de leche.",
+        "precio": 3.00,
+        "imagen": "../imagenes/menu/cafes/Cappuccino Cremoso.jpg"
+    },
+    {
+        "id": 4,
+        "nombre": "Mocha",
+        "descripcion": "Delicioso espresso con chocolate y leche espumosa.",
+        "precio": 3.75,
+        "imagen": "../imagenes/menu/cafes/Mocha-Chocolatoso.jpg"
+    },
+    {
+        "id": 5,
+        "nombre": "Macchiato",
+        "descripcion": "Un espresso con una pequeña cantidad de leche espumosa.",
+        "precio": 2.75,
+        "imagen": "../imagenes/menu/cafes/Caramel Macchiato.jpg"
+    }
+]

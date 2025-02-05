@@ -21,6 +21,9 @@
   <link rel="stylesheet" href="/css/carrousel-moviles.css">
   <link rel="stylesheet" href="/css/navbar.css">
 
+  <script src="app.js"></script>
+
+
 </head>
 
 <body>
@@ -31,13 +34,11 @@
       <li><a href="#principal">Principal</a></li>
       <li><a href="#ordenar">Ordenar</a></li>
       <li><a href="#contactos">Contactos</a></li>
-      <li><button id="boton-iniciar-sesion" class="btn-login">Iniciar Sesión</button></li>
     </ul>
 
   </nav>
   
   <div id="menu-navbar"></div> <!-- Navbar -->
-  <!--<section id="principal" class="carrusel-cafes"></section>  En carrousel.css -->
 
   <section id="principal" style="margin-top: -20px;"></section>
 
@@ -73,48 +74,13 @@
 
   <h1 style="margin: 80px 0px 20px 20px;  color: #4B2C20;">Ordena Ya!</h1>
 
-    <div class="contenedor-2 splide" style="margin-top: 10px;">
-      <div class="splide__track">
-        <ul class="splide__list">
-            <li class="splide__slide card-menu">
-  
-              <div class="mini-contenedor-2">
-                <img src="../imagenes/menu/cafes/cafe-intenso.jpg" alt="">
-                <p>Cafe Intenso de 120ml <br> Precio 40C$</p>
-                <button> Obtener Ahora </button>
-              </div>
-  
-            </li>
-            <li class="splide__slide card-menu">
-  
-              <div class="mini-contenedor-2">
-                <img src="../imagenes/menu/cafes/Cappuccino Cremoso.jpg" alt="">
-                <p>Cappuccino Cremoso de 220ml <br> Precio 80C$</p>
-                <button> Obtener Ahora </button>
-              </div>
-  
-            </li>
-            <li class="splide__slide card-menu">
-  
-              <div class="mini-contenedor-2">
-                <img src="../imagenes/menu/cafes/Caramel Macchiato.jpg" alt="">
-                <p>Caramel Macchiato de 240ml <br> Precio 120C$</p>
-                <button> Obtener Ahora </button>
-              </div>
-  
-            </li>
-            <li class="splide__slide card-menu">
-  
-              <div class="mini-contenedor-2">
-                <img src="../imagenes/menu/cafes/Mocha-Chocolatoso.jpg" alt="">
-                <p>Mocha Chocolatoso de 240ml <br> Precio 120C$</p>
-                <button> Obtener Ahora </button>
-              </div>
-  
-            </li>
-        </ul>
-      </div>
+  <div class="contenedor-2 splide" style="margin-top: 10px;">
+    <div class="splide__track">
+      <ul class="splide__list" id="carrusel-cafes"> <!-- Aseguramos que tenga el ID -->
+        <!-- Las tarjetas se cargarán aquí dinámicamente -->
+      </ul>
     </div>
+  </div>
 
     <!-- Segundo Carrusel de Postres -->
     <h1 style="margin: 50px 0px 20px 20px; color: #4B2C20;">Postres para Disfrutar</h1>
@@ -163,15 +129,11 @@
 </html>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function () { /*carousel glide*/
-    new Glide('.glide', {type: 'carousel',autoplay: 5000/*Tiempo Imagen*/}).mount();
+  document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelectorAll('.splide').forEach(carousel => { /*Todos los carruseles .splide*/
         new Splide(carousel, {type: 'loop',perPage: 3,focus: 'center',interval: 5000,}).mount();
     });
-
-    const btniniciarsesion = document.getElementById("boton-iniciar-sesion");
-    btniniciarsesion.addEventListener("click", function(){window.location.href = "/vistas/recursos/login.html"})
 
   });
 

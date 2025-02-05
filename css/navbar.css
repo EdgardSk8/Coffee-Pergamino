@@ -48,28 +48,6 @@ body {
     text-decoration: none; /* No subraya el enlace */
 }
 
-/* Estilos para el botón */
-.btn-login {
-    position: absolute; /* Lo posiciona en la parte derecha del navbar */
-    right: 20px; /* Espacio a la derecha */
-    padding: 5px 10px;
-    font-size: 14px;
-    color: white;
-    background-color: #4693e0; /* Color sólido por defecto */
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-align: center;
-    white-space: nowrap;
-    margin: 0; /* Elimina el margen para evitar desplazamientos */
-    transition: background-color 0.3s ease; /* Transición suave de 1 segundo para el color de fondo */
-}
-
-/* Efecto hover para el botón */
-.btn-login:hover {
-    background-color: #3877c3; /* Cambio a un color sólido cuando el ratón pasa por encima */
-}
-
 
 
 
